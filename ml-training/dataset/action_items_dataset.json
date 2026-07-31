@@ -1,0 +1,402 @@
+[
+    {
+        "text": "John please finish the report by Friday",
+        "label": 1
+    },
+    {
+        "text": "Sarah can you update the database schema before next Monday",
+        "label": 1
+    },
+    {
+        "text": "Mike needs to deploy the app to production by end of day",
+        "label": 1
+    },
+    {
+        "text": "Lisa please schedule a meeting with the client for Tuesday",
+        "label": 1
+    },
+    {
+        "text": "We need someone to review the pull request by tomorrow",
+        "label": 1
+    },
+    {
+        "text": "Alex will handle the bug fixes this sprint",
+        "label": 1
+    },
+    {
+        "text": "Please send the invoice to the client before March 15",
+        "label": 1
+    },
+    {
+        "text": "Tom should prepare the presentation slides by Wednesday",
+        "label": 1
+    },
+    {
+        "text": "Can you write unit tests for the new module by next week",
+        "label": 1
+    },
+    {
+        "text": "Rachel will set up the CI CD pipeline this week",
+        "label": 1
+    },
+    {
+        "text": "Update the documentation before the release",
+        "label": 1
+    },
+    {
+        "text": "David please fix the login page CSS issues",
+        "label": 1
+    },
+    {
+        "text": "We need to migrate the database by end of month",
+        "label": 1
+    },
+    {
+        "text": "Anna should contact the vendor about pricing by Thursday",
+        "label": 1
+    },
+    {
+        "text": "Please create wireframes for the new dashboard feature",
+        "label": 1
+    },
+    {
+        "text": "James will refactor the authentication module this sprint",
+        "label": 1
+    },
+    {
+        "text": "Can someone set up monitoring alerts by Friday",
+        "label": 1
+    },
+    {
+        "text": "Emily needs to complete the user research by next Tuesday",
+        "label": 1
+    },
+    {
+        "text": "Please review and merge the feature branch today",
+        "label": 1
+    },
+    {
+        "text": "Chris should order new equipment for the team",
+        "label": 1
+    },
+    {
+        "text": "We have to submit the compliance report by April 1st",
+        "label": 1
+    },
+    {
+        "text": "Kevin will design the API endpoints for the payment system",
+        "label": 1
+    },
+    {
+        "text": "Please organize the team offsite for next month",
+        "label": 1
+    },
+    {
+        "text": "Maria needs to train the new interns starting Monday",
+        "label": 1
+    },
+    {
+        "text": "Run the performance benchmarks before we ship",
+        "label": 1
+    },
+    {
+        "text": "Assign the security audit task to the DevOps team",
+        "label": 1
+    },
+    {
+        "text": "Brian please prepare the quarterly budget report",
+        "label": 1
+    },
+    {
+        "text": "We should move the staging server to AWS by next sprint",
+        "label": 1
+    },
+    {
+        "text": "Please draft the press release for the product launch",
+        "label": 1
+    },
+    {
+        "text": "Sophie will coordinate with marketing on the campaign",
+        "label": 1
+    },
+    {
+        "text": "Fix the memory leak in the background service before release",
+        "label": 1
+    },
+    {
+        "text": "Dan needs to implement the search functionality by Friday",
+        "label": 1
+    },
+    {
+        "text": "Create a backup strategy document by end of week",
+        "label": 1
+    },
+    {
+        "text": "Laura should finalize the contract with the new client",
+        "label": 1
+    },
+    {
+        "text": "Please add error handling to all API endpoints",
+        "label": 1
+    },
+    {
+        "text": "Set up the staging environment by tomorrow morning",
+        "label": 1
+    },
+    {
+        "text": "Nina will onboard the new developer starting next week",
+        "label": 1
+    },
+    {
+        "text": "Write the migration script for the legacy data",
+        "label": 1
+    },
+    {
+        "text": "Please book the conference room for the Friday demo",
+        "label": 1
+    },
+    {
+        "text": "Sam should implement two factor authentication",
+        "label": 1
+    },
+    {
+        "text": "Send the project status update to stakeholders by EOD",
+        "label": 1
+    },
+    {
+        "text": "Please integrate the payment gateway by next Wednesday",
+        "label": 1
+    },
+    {
+        "text": "Tyler will handle the customer support tickets today",
+        "label": 1
+    },
+    {
+        "text": "Create the test plan for the upcoming release",
+        "label": 1
+    },
+    {
+        "text": "Jessica needs to redesign the mobile navigation",
+        "label": 1
+    },
+    {
+        "text": "Configure the load balancer before the traffic spike",
+        "label": 1
+    },
+    {
+        "text": "Please update the privacy policy page by Monday",
+        "label": 1
+    },
+    {
+        "text": "Ryan should optimize the database queries this sprint",
+        "label": 1
+    },
+    {
+        "text": "Prepare the demo script for the investor meeting",
+        "label": 1
+    },
+    {
+        "text": "Kate will research competitor pricing models this week",
+        "label": 1
+    },
+    {
+        "text": "I think that is a really good point",
+        "label": 0
+    },
+    {
+        "text": "Yeah the weather has been great lately",
+        "label": 0
+    },
+    {
+        "text": "Let me think about that and get back to you",
+        "label": 0
+    },
+    {
+        "text": "We had a similar issue last quarter",
+        "label": 0
+    },
+    {
+        "text": "The meeting went well overall",
+        "label": 0
+    },
+    {
+        "text": "I agree with what Sarah said earlier",
+        "label": 0
+    },
+    {
+        "text": "That reminds me of the project we did last year",
+        "label": 0
+    },
+    {
+        "text": "Generally speaking the team has been productive",
+        "label": 0
+    },
+    {
+        "text": "Hello everyone thanks for joining the call",
+        "label": 0
+    },
+    {
+        "text": "Good morning lets get started with the standup",
+        "label": 0
+    },
+    {
+        "text": "I was wondering about the timeline for next quarter",
+        "label": 0
+    },
+    {
+        "text": "The revenue numbers look promising this month",
+        "label": 0
+    },
+    {
+        "text": "Maybe we should consider a different approach",
+        "label": 0
+    },
+    {
+        "text": "That is an interesting idea worth exploring",
+        "label": 0
+    },
+    {
+        "text": "We discussed this topic in the last meeting too",
+        "label": 0
+    },
+    {
+        "text": "The client seemed happy with the progress",
+        "label": 0
+    },
+    {
+        "text": "I noticed the server was slow yesterday afternoon",
+        "label": 0
+    },
+    {
+        "text": "We are currently at 80 percent completion",
+        "label": 0
+    },
+    {
+        "text": "The new office layout looks much better",
+        "label": 0
+    },
+    {
+        "text": "Does anyone have questions about the roadmap",
+        "label": 0
+    },
+    {
+        "text": "Thanks for the update on that issue",
+        "label": 0
+    },
+    {
+        "text": "We should probably discuss this offline",
+        "label": 0
+    },
+    {
+        "text": "I had a conversation with the CEO about this",
+        "label": 0
+    },
+    {
+        "text": "The budget for this quarter is approved",
+        "label": 0
+    },
+    {
+        "text": "Last week we shipped two major features",
+        "label": 0
+    },
+    {
+        "text": "The feedback from users has been positive",
+        "label": 0
+    },
+    {
+        "text": "I understand your concern about the deadline",
+        "label": 0
+    },
+    {
+        "text": "We have been using this tool for about six months",
+        "label": 0
+    },
+    {
+        "text": "The competitors launched a similar feature recently",
+        "label": 0
+    },
+    {
+        "text": "Our customer satisfaction score improved this month",
+        "label": 0
+    },
+    {
+        "text": "It was a challenging sprint but we managed",
+        "label": 0
+    },
+    {
+        "text": "The team morale has been really good lately",
+        "label": 0
+    },
+    {
+        "text": "I read an article about this new technology",
+        "label": 0
+    },
+    {
+        "text": "We need to be more careful about scope creep",
+        "label": 0
+    },
+    {
+        "text": "The performance metrics are looking solid",
+        "label": 0
+    },
+    {
+        "text": "Anyone want to grab lunch after this meeting",
+        "label": 0
+    },
+    {
+        "text": "The test coverage has improved significantly",
+        "label": 0
+    },
+    {
+        "text": "I appreciate everyone staying late yesterday",
+        "label": 0
+    },
+    {
+        "text": "The deployment went smoothly last night",
+        "label": 0
+    },
+    {
+        "text": "We are on track to hit our quarterly goals",
+        "label": 0
+    },
+    {
+        "text": "That was a productive brainstorming session",
+        "label": 0
+    },
+    {
+        "text": "The new hire is settling in well with the team",
+        "label": 0
+    },
+    {
+        "text": "Overall I think we are in a good position",
+        "label": 0
+    },
+    {
+        "text": "Let us move on to the next agenda item",
+        "label": 0
+    },
+    {
+        "text": "I will think about it and share my thoughts later",
+        "label": 0
+    },
+    {
+        "text": "The sprint retrospective went well yesterday",
+        "label": 0
+    },
+    {
+        "text": "We have three more weeks until the deadline",
+        "label": 0
+    },
+    {
+        "text": "I just wanted to give a quick status update",
+        "label": 0
+    },
+    {
+        "text": "Has anyone tried the new coffee machine yet",
+        "label": 0
+    },
+    {
+        "text": "Alright that wraps up today's meeting thanks everyone",
+        "label": 0
+    }
+]
