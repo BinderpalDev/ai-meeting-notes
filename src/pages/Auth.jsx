@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useAuth } from '../contexts/AuthContext';
 import { useNavigate } from 'react-router-dom';
 import { Mail, Lock, Zap, ArrowRight, Loader2 } from 'lucide-react';
@@ -14,10 +14,11 @@ export default function Auth() {
   const [isProcessing, setIsProcessing] = useState(false);
 
   // Redirect if already logged in
-  if (user) {
-    navigate('/', { replace: true });
-    return null;
-  }
+  useEffect(() => {
+    if (user) {
+      navigate('/', { replace: true });
+    }
+  }, [user, navigate]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();

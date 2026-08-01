@@ -1,0 +1,400 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 12px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-panel: var(--panel);
+  --color-mint: var(--mint);
+  --color-mint-foreground: var(--mint-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --font-display: "Zodiak", ui-serif, Georgia, serif;
+  --font-sans: "Satoshi", ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Paper & Ink — light is the default palette. */
+:root {
+  --radius: 0.75rem;
+  --background: oklch(0.965 0.006 85);
+  --foreground: oklch(0.22 0.004 80);
+  --panel: oklch(0.99 0.004 85);
+  --card: oklch(0.99 0.004 85);
+  --card-foreground: oklch(0.22 0.004 80);
+  --popover: oklch(0.99 0.004 85);
+  --popover-foreground: oklch(0.22 0.004 80);
+  --primary: oklch(0.24 0.004 80);
+  --primary-foreground: oklch(0.97 0.006 85);
+  --secondary: oklch(0.925 0.008 85);
+  --secondary-foreground: oklch(0.26 0.004 80);
+  --muted: oklch(0.93 0.008 85);
+  --muted-foreground: oklch(0.52 0.006 80);
+  --accent: oklch(0.91 0.01 85);
+  --accent-foreground: oklch(0.24 0.004 80);
+  --mint: oklch(0.45 0.03 190);
+  --mint-foreground: oklch(0.98 0.004 85);
+  --destructive: oklch(0.52 0.16 27);
+  --destructive-foreground: oklch(0.98 0.004 85);
+  --border: oklch(0.22 0.004 80 / 12%);
+  --input: oklch(0.22 0.004 80 / 16%);
+  --ring: oklch(0.4 0.006 80);
+  --sidebar: oklch(0.945 0.008 85);
+  --sidebar-foreground: oklch(0.24 0.004 80);
+  --sidebar-primary: oklch(0.22 0.004 80);
+  --sidebar-primary-foreground: oklch(0.97 0.006 85);
+  --sidebar-accent: oklch(0.9 0.01 85);
+  --sidebar-accent-foreground: oklch(0.2 0.004 80);
+  --sidebar-border: oklch(0.22 0.004 80 / 10%);
+  --sidebar-ring: oklch(0.4 0.006 80);
+  --glow-primary: 0 1px 2px oklch(0.22 0.004 80 / 12%), 0 8px 24px -16px oklch(0.22 0.004 80 / 45%);
+  --glow-mint: 0 1px 2px oklch(0.22 0.004 80 / 10%);
+  --gradient-primary: linear-gradient(160deg, oklch(0.28 0.004 80), oklch(0.16 0.004 80));
+}
+
+/* Ink — dark counterpart, still neutral and quiet. */
+.dark {
+  --background: oklch(0.16 0.003 80);
+  --foreground: oklch(0.94 0.005 85);
+  --panel: oklch(0.2 0.003 80);
+  --card: oklch(0.2 0.003 80);
+  --card-foreground: oklch(0.94 0.005 85);
+  --popover: oklch(0.19 0.003 80);
+  --popover-foreground: oklch(0.94 0.005 85);
+  --primary: oklch(0.93 0.005 85);
+  --primary-foreground: oklch(0.17 0.003 80);
+  --secondary: oklch(0.25 0.003 80);
+  --secondary-foreground: oklch(0.94 0.005 85);
+  --muted: oklch(0.24 0.003 80);
+  --muted-foreground: oklch(0.66 0.005 85);
+  --accent: oklch(0.27 0.003 80);
+  --accent-foreground: oklch(0.94 0.005 85);
+  --mint: oklch(0.82 0.04 190);
+  --mint-foreground: oklch(0.18 0.01 190);
+  --destructive: oklch(0.6 0.16 27);
+  --destructive-foreground: oklch(0.98 0.004 85);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 14%);
+  --ring: oklch(0.7 0.005 85);
+  --sidebar: oklch(0.18 0.003 80);
+  --sidebar-foreground: oklch(0.94 0.005 85);
+  --sidebar-primary: oklch(0.93 0.005 85);
+  --sidebar-primary-foreground: oklch(0.17 0.003 80);
+  --sidebar-accent: oklch(0.26 0.003 80);
+  --sidebar-accent-foreground: oklch(0.96 0.005 85);
+  --sidebar-border: oklch(1 0 0 / 8%);
+  --sidebar-ring: oklch(0.7 0.005 85);
+  --glow-primary: 0 1px 2px oklch(0 0 0 / 40%), 0 10px 30px -20px oklch(0 0 0 / 80%);
+  --glow-mint: 0 1px 2px oklch(0 0 0 / 35%);
+  --gradient-primary: linear-gradient(160deg, oklch(0.96 0.005 85), oklch(0.86 0.005 85));
+}
+
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
+}
+
+@utility glow-primary {
+  box-shadow: var(--glow-primary);
+}
+
+@utility glow-mint {
+  box-shadow: var(--glow-mint);
+}
+
+@utility gradient-primary {
+  background-image: var(--gradient-primary);
+}
+
+@utility panel {
+  background-color: var(--panel);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+}
+
+@utility glass {
+  background-color: color-mix(in oklab, var(--panel) 78%, transparent);
+  backdrop-filter: blur(18px) saturate(140%);
+  border: 1px solid var(--color-border);
+}
+
+@utility aurora {
+  position: relative;
+  isolation: isolate;
+  &::before {
+    content: "";
+    position: absolute;
+    inset: -20% -10% auto -10%;
+    height: 60vh;
+    z-index: -1;
+    background:
+      radial-gradient(50% 60% at 20% 15%, color-mix(in oklab, var(--foreground) 7%, transparent), transparent 70%),
+      radial-gradient(45% 55% at 85% 5%, color-mix(in oklab, var(--foreground) 5%, transparent), transparent 70%);
+    filter: blur(20px);
+    pointer-events: none;
+  }
+}
+
+@keyframes bar-pulse {
+  0%,
+  100% {
+    transform: scaleY(0.25);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes float-slow {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+/* ============================================
+   CUSTOM CURSOR
+   ============================================ */
+* {
+  cursor: none !important;
+}
+
+.cursor-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--mint);
+  will-change: transform;
+  transition: width 0.15s, height 0.15s, background 0.15s, opacity 0.15s;
+  box-shadow: 0 0 10px var(--mint), 0 0 20px color-mix(in oklab, var(--mint) 50%, transparent);
+}
+
+.cursor-ring {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1.5px solid color-mix(in oklab, var(--mint) 60%, transparent);
+  will-change: transform;
+  transition: width 0.2s ease, height 0.2s ease, border-color 0.2s ease, opacity 0.2s ease;
+}
+
+.cursor-dot.cursor-click {
+  width: 4px;
+  height: 4px;
+  background: var(--foreground);
+  box-shadow: 0 0 16px var(--mint);
+}
+
+.cursor-ring.ring-click {
+  width: 56px;
+  height: 56px;
+  border-color: var(--mint);
+  opacity: 0.5;
+}
+
+.cursor-ring.ring-hover {
+  width: 56px;
+  height: 56px;
+  border-color: var(--mint);
+  background: color-mix(in oklab, var(--mint) 8%, transparent);
+}
+
+/* ============================================
+   SCROLL REVEAL ANIMATIONS
+   ============================================ */
+.sr-base {
+  transition: opacity 0.65s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform;
+}
+
+.sr-up {
+  opacity: 0;
+  transform: translateY(32px);
+}
+
+.sr-down {
+  opacity: 0;
+  transform: translateY(-32px);
+}
+
+.sr-left {
+  opacity: 0;
+  transform: translateX(32px);
+}
+
+.sr-right {
+  opacity: 0;
+  transform: translateX(-32px);
+}
+
+.sr-fade {
+  opacity: 0;
+}
+
+.sr-visible {
+  opacity: 1 !important;
+  transform: translate(0, 0) !important;
+}
+
+/* ============================================
+   BUTTON ANIMATIONS
+   ============================================ */
+button,
+[role="button"],
+a {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.15s cubic-bezier(0.34, 1.56, 0.64, 1),
+    box-shadow 0.2s ease,
+    background 0.2s ease,
+    opacity 0.2s ease;
+}
+
+button:active,
+[role="button"]:active {
+  transform: scale(0.94) !important;
+}
+
+/* Ripple on click */
+.ripple {
+  position: absolute;
+  border-radius: 50%;
+  background: color-mix(in oklab, var(--mint) 25%, white 25%);
+  transform: scale(0);
+  animation: ripple-expand 0.5s linear;
+  pointer-events: none;
+  z-index: 0;
+}
+
+@keyframes ripple-expand {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+/* ============================================
+   CARD HOVER ANIMATIONS
+   ============================================ */
+.panel,
+[class*="panel"],
+.glass {
+  transition:
+    transform 0.25s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.25s cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 0.25s ease;
+}
+
+.panel:hover,
+[class*="panel"]:hover {
+  transform: translateY(-3px);
+  box-shadow:
+    0 4px 6px -1px oklch(0 0 0 / 10%),
+    0 12px 40px -12px color-mix(in oklab, var(--mint) 20%, oklch(0 0 0 / 30%));
+  border-color: color-mix(in oklab, var(--mint) 30%, transparent);
+}
+
+/* ============================================
+   LINK / NAV HOVER ANIMATIONS
+   ============================================ */
+nav a {
+  transition:
+    color 0.2s ease,
+    background 0.2s ease,
+    transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+nav a:hover {
+  transform: translateX(3px);
+}
+
+/* ============================================
+   INPUT FOCUS ANIMATION
+   ============================================ */
+input,
+textarea,
+select {
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+input:focus,
+textarea:focus {
+  box-shadow: 0 0 0 2px color-mix(in oklab, var(--mint) 35%, transparent);
+}
+
+/* ============================================
+   STAGGER ANIMATION HELPERS
+   ============================================ */
+.stagger-1 { transition-delay: 50ms; }
+.stagger-2 { transition-delay: 100ms; }
+.stagger-3 { transition-delay: 150ms; }
+.stagger-4 { transition-delay: 200ms; }
+.stagger-5 { transition-delay: 250ms; }
+.stagger-6 { transition-delay: 300ms; }
+
+/* ============================================
+   PAGE TRANSITION
+   ============================================ */
+@keyframes page-in {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.page-enter {
+  animation: page-in 0.4s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a855f7;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background Circle -->
+  <rect x="0" y="0" width="64" height="64" rx="16" fill="#0f172a" />
+  
+  <!-- Gradient Zap Icon -->
+  <path d="M36 4 L20 32 H32 L28 60 L44 32 H32 L36 4 Z" fill="url(#grad)" stroke="none" transform="translate(0, 0)" />
+</svg>
