@@ -21,7 +21,7 @@ export default function Dashboard() {
   const [isProcessing, setIsProcessing] = useState(false);
   const [error, setError] = useState('');
   const [recordings, setRecordings] = useState([]);
-  const [isDarkMode, setIsDarkMode] = useState(true);
+  const [isDarkMode, setIsDarkMode] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
 
   const [quickNotes, setQuickNotes] = useState([]);

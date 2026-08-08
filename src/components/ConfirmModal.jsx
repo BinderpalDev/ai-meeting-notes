@@ -9,7 +9,7 @@ export default function ConfirmModal({
   message = 'Are you sure you want to proceed?',
   confirmText = 'Confirm',
   cancelText = 'Cancel',
-  isDarkMode = true 
+  isDarkMode = false 
 }) {
   const [isLoading, setIsLoading] = useState(false);
 

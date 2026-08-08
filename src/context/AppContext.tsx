@@ -141,7 +141,7 @@ function formatDbNoteToUI(dbNote: any): Note {
 export function AppProvider({ children }: { children: ReactNode }) {
   const auth = useAuth();
   const [hydrated, setHydrated] = useState(false);
-  const [theme, setTheme] = useState<Theme>("dark");
+  const [theme, setTheme] = useState<Theme>("light");
   const [recordings, setRecordings] = useState<Recording[]>([]);
   const [notes, setNotes] = useState<Note[]>([]);
   const [settings, setSettings] = useState({
